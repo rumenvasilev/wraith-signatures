@@ -219,14 +219,6 @@ PatternSignatures:
         confidence-level: 3
     -
         part: PartContent
-        match: '(?i)password:(.{0,64}?[^\r\n].{0,32})'
-        description: 'Looks like an Artifactory password'
-        signatureid: '81d173421f5a40d58fac47757130b76f'
-        enable: 1
-        entropy: 3.5
-        confidence-level: 3
-    -
-        part: PartContent
         match: '(?i)nexuspassword[ \t]{0,64}[\=\:\?](.{0,64}?[^\r\n].{0,32})'
         description: 'Looks like a Nexus password'
         signatureid: 'c7866a7c01ef4eadb428ad2253d54db0'
